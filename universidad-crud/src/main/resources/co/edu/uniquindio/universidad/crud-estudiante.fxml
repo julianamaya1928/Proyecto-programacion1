@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.universidad.viewcontroller.CrudEstudianteViewController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="10.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="900.0">
+        <items>
+          <!-- Panel Superior: Formulario -->
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="20.0" text="Nombre:" />
+                  <Label layoutX="20.0" layoutY="60.0" text="Apellido:" />
+                  <Label layoutX="20.0" layoutY="100.0" text="Identificación:" />
+                  <Label layoutX="20.0" layoutY="140.0" text="Edad:" />
+                  <Label layoutX="20.0" layoutY="180.0" text="Teléfono:" />
+                  <Label layoutX="20.0" layoutY="220.0" text="Carrera:" />
+                  <Label layoutX="20.0" layoutY="260.0" text="Semestre:" />
+                  <Label layoutX="20.0" layoutY="300.0" text="Promedio:" />
+                  <Label layoutX="20.0" layoutY="340.0" text="Código:" />
+                  
+                  <TextField fx:id="txtNombre" layoutX="150.0" layoutY="16.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtApellido" layoutX="150.0" layoutY="56.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtIdentificacion" layoutX="150.0" layoutY="96.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtEdad" layoutX="150.0" layoutY="136.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtTelefono" layoutX="150.0" layoutY="176.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtCarrera" layoutX="150.0" layoutY="216.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtSemestre" layoutX="150.0" layoutY="256.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtPromedio" layoutX="150.0" layoutY="296.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtCodigo" layoutX="150.0" layoutY="336.0" prefHeight="26.0" prefWidth="200.0" />
+                  
+                  <Button fx:id="btnNuevo" layoutX="500.0" layoutY="50.0" mnemonicParsing="false" onAction="#onActionNuevo" prefHeight="35.0" prefWidth="100.0" text="Nuevo" />
+                  <Button fx:id="btnAgregar" layoutX="500.0" layoutY="100.0" mnemonicParsing="false" onAction="#onActionAgregar" prefHeight="35.0" prefWidth="100.0" text="Agregar" />
+                  <Button fx:id="btnActualizar" layoutX="500.0" layoutY="150.0" mnemonicParsing="false" onAction="#onActionActualizar" prefHeight="35.0" prefWidth="100.0" text="Actualizar" />
+                  <Button fx:id="btnEliminar" layoutX="500.0" layoutY="200.0" mnemonicParsing="false" onAction="#onActionEliminar" prefHeight="35.0" prefWidth="100.0" text="Eliminar" />
+               </children>
+            </AnchorPane>
+          <!-- Panel Inferior: Tabla -->
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableEstudiante" layoutX="10.0" layoutY="10.0" prefHeight="300.0" prefWidth="880.0">
+                    <columns>
+                      <TableColumn fx:id="tcNombre" prefWidth="100.0" text="Nombre" />
+                      <TableColumn fx:id="tcApellido" prefWidth="100.0" text="Apellido" />
+                      <TableColumn fx:id="tcIdentificacion" prefWidth="100.0" text="Identificación" />
+                      <TableColumn fx:id="tcEdad" prefWidth="60.0" text="Edad" />
+                      <TableColumn fx:id="tcTelefono" prefWidth="100.0" text="Teléfono" />
+                      <TableColumn fx:id="tcCarrera" prefWidth="120.0" text="Carrera" />
+                      <TableColumn fx:id="tcSemestre" prefWidth="70.0" text="Semestre" />
+                      <TableColumn fx:id="tcPromedio" prefWidth="80.0" text="Promedio" />
+                      <TableColumn fx:id="tcCodigo" prefWidth="100.0" text="Código" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
+

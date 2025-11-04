@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.universidad.viewcontroller.MainViewController">
+   <children>
+      <TabPane layoutX="10.0" layoutY="10.0" prefHeight="640.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Estudiantes">
+              <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="640.0" prefWidth="900.0">
+                      <children>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <children>
+                                  <fx:include source="crud-estudiante.fxml" />
+                              </children>
+                          </AnchorPane>
+                      </children>
+                  </AnchorPane>
+              </content>
+          </Tab>
+          <Tab text="Externos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="640.0" prefWidth="900.0">
+                  <children>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                              <fx:include source="crud-externo.fxml" />
+                          </children>
+                      </AnchorPane>
+                  </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Trabajadores">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="640.0" prefWidth="900.0">
+                  <children>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                              <fx:include source="crud-trabajador.fxml" />
+                          </children>
+                      </AnchorPane>
+                  </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
+
